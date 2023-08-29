@@ -1,0 +1,22 @@
+Header{
+    background: #6f769e;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15vw;
+    align-items: center;
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+.barbie-img{
+    width: 200px;
+    height: auto;
+}
