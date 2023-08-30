@@ -2,7 +2,7 @@ Header{
     background: #6f769e;
     display: flex;
     justify-content: space-between;
-    padding: 0px 15vw;
+    padding: 0px 10vw;
     align-items: center;
 }
 header nav ul li a{
@@ -17,6 +17,7 @@ header nav ul{
     gap: 15px;
 }
 .barbie-img{
-    width: 200px;
+    width: 150px;
     height: auto;
+    flex-direction: row;
 }

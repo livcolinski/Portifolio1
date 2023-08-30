@@ -72,4 +72,16 @@ display: flex;
   .descricao {
     margin-left: 20px;
   }
+
+  .flor{
+    max-width: 100px;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+  }
+
+  .vasinho{
+    display: flex;
+    justify-content: flex-end;
+  }
 }

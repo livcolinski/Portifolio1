@@ -10,7 +10,7 @@ footer {
   .footer-section {
     flex: 1;
     margin-right: 20px;
-    margin-left: 200px;
+    
   }
   .Contato:hover{
     text-decoration: underline;
