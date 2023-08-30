@@ -1,8 +1,9 @@
 import './Footer.css'
+import logo from './../header/logo.png'
 export default function Footer() {
   return (
     <footer>
-         <img src='/src/componentes/header/logo.png' className='barbie-img2'></img>
+         <img src={logo} className='barbie-img2'></img>
          
 
 

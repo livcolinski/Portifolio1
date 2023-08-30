@@ -1,8 +1,9 @@
 import './Header.css'
+import logo from './logo.png'
 function Header(){
     return(
         <header>
-          <img src='/src/componentes/header/logo.png' className='barbie-img'></img>
+          <img src={logo} className='barbie-img'></img>
             <nav>
                 <ul>
                 <li>
