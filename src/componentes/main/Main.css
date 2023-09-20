@@ -1,5 +1,5 @@
-Main{
-    background-color: #424769;
+/* Main{
+    
     padding: 35px;
     display: flex;
     justify-content: space-around;
@@ -13,7 +13,7 @@ Main{
    color: white;
 
 
- }
+ } */
 
  .simples-img{
   width: 200px;
@@ -56,9 +56,19 @@ display: flex;
     padding: 20px;
     border: 1px solid #ddd;
     background-color: #2a2f4d;
+    transition: background-color 0.1s ease, transform 0.5s ease;
+
+  }
+  .container:hover{
+    background: rgba(252, 191, 69, 0.342),;
+background: linear-gradient(90deg, rgba(255, 198, 83, 0.301) 0%, rgba(255,255,255,0) 100%);
+    transform: color(1.5);
+
   }
   .sobre{
     color: #ddbf7f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
   }
 
   .eu-img{
@@ -84,4 +94,59 @@ display: flex;
     display: flex;
     justify-content: flex-end;
   }
+
+  .content-main{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    background-color: #424769;
+    /* gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+  
+
+.barrapesquisa{
+    height: 20px;
+    border: 1px solid #bebebe;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+.barrapesquisa:focus-visible{
+    outline: 1px solid rgba(28, 28, 191, 0.57);
+}
+.pesquisa{
+    padding: 30px;
+    background-color: #424769;
+}
+.projeto_content{
+  transition: background-color 0.5s ease, transform 0.5s ease;
+
+}
+.projeto_content:hover{
+  background-color: #858cb9;
+  transform: scale(1.1);
+  
+}
+.buscar , .texto_digitado{
+  color: #ddbf7f;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Myname{
+display: flex;
+justify-content: center;
+background: #6f769e;
+padding: 0px;
+margin: 0px;
+
+}
+.Myname{
+  color: white;
+}
+.Myname h1{
+  background: transparent;
 }

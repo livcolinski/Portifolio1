@@ -1,66 +1,93 @@
+import { useState } from "react";
+import Projeto from "../projeto/Projeto";
 import './Main.css'
-import Simples from './simples.jpeg'
-import Colorido from './colorido.jpeg'
-import Detalhado from './detalhado.jpeg'
-import Eu from './eu.png'
-import Flor from './cherry blossom-amico.svg'
 
-function Main(){
+
+type ProjetoType = {
+    id: number,
+    titulo:string,
+    sinopse:string,
+    imagem:string
+}
+export default function Main(){
+    //Hook
+    const [texto,setTexto] = useState("")
+
+    const projeto:ProjetoType[] = [
+        {
+            id:1,
+            titulo:"Simple:",
+            sinopse:"Desenho simples",
+            imagem:"/simples.jpeg"
+        },
+        {
+            id:2,
+            titulo:"Shaded:",
+            sinopse:"Desenho complexo",
+            imagem:"/colorido.jpeg"
+        },
+        {
+            id:3,
+            titulo:"Detailed:",
+            sinopse:"Desenho detalhado",
+            imagem:"/detalhado.jpeg"
+        }
+
+    ]
+    //A função recebe um atributo chamado e de "event"
+    function mudaTexto(e:React.ChangeEvent<HTMLInputElement>){
+        console.log(e.target.value)
+        setTexto(e.target.value)
+    }
     return(
-     <main>
-        <div className='Myname'>
+        <>
+           <div className='Myname'>
             <h1>
             Lɪᴠɪᴀ Mᴀʀɪᴀ Tᴏᴜʀᴏ
             </h1>
-        </div>
-
-        <div className='Projetos'>
-
-        <div className="project">
-    <h2>Projeto Simples</h2>
-    <img src={Simples} className='simples-img'></img>
-    <p>Lineart Fullbody.</p>
-  </div>
-
-  <div className="project">
-    <h2>Projeto Colorido</h2>
-    <img src={Colorido} className='simples-img'></img>
-    
-    <p>Halfbody Detailed.</p>
-  </div>
-
-  <div className="project">
-    <h2>Projeto Detalhado</h2>
-    <img src={Detalhado}className='simples-img'></img>
-    <p>Halfbody Simple Color.</p>
-  </div>
-         </div>
+          </div>
+            <div className="pesquisa">
+                
+                <p className="buscar">Buscar Projeto</p>
+                <input className='barrapesquisa' type="text" onChange={mudaTexto} />
+                <div>
+                    <p className='texto_digitado'>pesquisa: {texto}</p>
+                </div>
+            </div>
 
 
 
-         <div className="container">
-         <img src={Eu} className='eu-img'></img>
+            
+
+
+
+            <main className="content-main">
+                {projeto.filter((projeto)=>projeto.titulo.toLowerCase().includes(texto.toLowerCase())).map((projeto:ProjetoType)=>
+                    <Projeto key={projeto.id} 
+                           titulo={projeto.titulo} 
+                           sinopse={projeto.sinopse} 
+                           imagem={projeto.imagem}
+                    />
+                    )
+                }
+
+                <div className="container">
+         
   
-  <div className="descricao">
-    <h2 className='sobre'>Sobre a Artista</h2>
-    <p>Sou uma artista independente,tenho o objetivo de compartilhar meu trabalho 
-      para que cheguem a pessoas com bom senso crítico e interessadas pela arte.</p>
+                <div className="descricao">
+                <h2 className='sobre'>Sobre a Artista</h2>
+                <p>Sou uma artista independente,tenho o objetivo de compartilhar meu trabalho 
+                para que cheguem a pessoas com bom senso crítico e interessadas pela arte.</p>
 
 
-      <div className='vasinho' >
-      <img  className='flor'src={Flor} alt="sherry" />
-      </div>
+                <div className='vasinho' >
+                
+                </div>
   </div>
 </div>
 
-
-
-
-
-
-
-     </main>  
+                
+            </main>
+        </>
     )
-
 }
-export default Main
