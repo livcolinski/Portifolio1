@@ -21,3 +21,11 @@ header nav ul{
     height: auto;
     flex-direction: row;
 }
+.botao{
+    transition: background-color 0.1s ease, transform 0.5s ease;
+    text-decoration: none;
+}
+.botao:hover{
+    background-color: #8f96bd;
+    transform: color (1.5);
+}
