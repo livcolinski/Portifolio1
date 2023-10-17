@@ -76,7 +76,7 @@ export default function Main(){
   
                 <div className="descricao">
                 <h2 className='sobre'>Sobre a Artista</h2>
-                <p>Sou uma artista independente,tenho o objetivo de compartilhar meu trabalho 
+                <p className="sou">Sou uma artista independente,tenho o objetivo de compartilhar meu trabalho 
                 para que cheguem a pessoas com bom senso crítico e interessadas pela arte.</p>
 
 

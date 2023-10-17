@@ -18,8 +18,8 @@ export default function Footer() {
  
   <div className="footer-section">
     <h2>Contato</h2>
-    <p>Email: livia.touro@estudante.ifms.edu.br</p>
-    <p>Telefone: (00)4002-8922</p>
+    <p className='cont'>Email: livia.touro@estudante.ifms.edu.br</p>
+    <p className='cont'>Telefone: (00)4002-8922</p>
   </div>
  
   <div className="footer-section">

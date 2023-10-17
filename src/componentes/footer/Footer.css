@@ -11,6 +11,8 @@ footer {
     flex: 1;
     margin-right: 20px;
     
+    
+    
   }
   .Contato:hover{
     text-decoration: underline;
@@ -32,8 +34,9 @@ footer {
   a:hover {
     text-decoration: underline;
   }
-  p{
+  .cont{
     color: white;
+    margin-top: 10px;
   }
   .barbie-img2{
     

@@ -1,5 +1,7 @@
 import './Header.css'
 import logo from './logo.png'
+import { Link } from "react-router-dom"
+
 function Header(){
     return(
         <header>
@@ -7,16 +9,24 @@ function Header(){
             <nav>
                 <ul>
                 <li>
-              <a href="#" className='botao'>Projetos</a>
+              
+              <Link to="/projetos">Projetos</Link>
+
             </li>
             <li>
-              <a href="#" className='botao'>Pedidos </a>
+              
+              <Link to="/pedidos">Pedidos</Link>
+
             </li>
             <li>
-              <a href="#" className='botao'>Sobre</a>
+              
+              <Link to="/sobre">Sobre</Link>
+
             </li>
             <li>
-              <a href="#" className='botao'>Contato</a>
+              
+              <Link to="/contato">Contato</Link>
+
             </li>
                 </ul>
             </nav>
