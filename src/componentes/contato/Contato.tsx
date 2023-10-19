@@ -11,14 +11,14 @@ function Contato() {
       console.log(e.target.value)
       setEmail(e.target.value)
       }
-      function mudaMsg(e:React.ChangeEvent<HTMLInputElement>){
+      function mudaMsg(e:React.ChangeEvent<HTMLTextAreaElement>){
         console.log(e.target.value)
-        setTexto(e.target.value)
+        setMsg(e.target.value)
         }
 
     const [Nome,setNome] = useState("")
     const [Email,setEmail] = useState("")
-    const [Msg,setTexto] = useState("")
+    const [Msg,setMsg] = useState("")
 
 
 
