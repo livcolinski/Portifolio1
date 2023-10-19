@@ -5,7 +5,18 @@ import { Link } from "react-router-dom"
 function Header(){
     return(
         <header>
-          <img src={logo} className='barbie-img'></img>
+          <div>
+            <ul><li>
+               <Link to="/"><img src={logo} className='barbie-img'></img></Link>
+              </li></ul>
+               
+            </div>
+          <ul>
+            
+            
+          </ul>
+          
+
             <nav>
                 <ul>
                 <li>
