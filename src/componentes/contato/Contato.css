@@ -89,6 +89,7 @@ textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -156,4 +157,10 @@ button:hover {
 .th:hover{
     transform: scale(1.1);
     background-color: black;
+}
+.mudanome , .mudaemail , .mudaMsg{
+    font-size: small;
+    color: #6f769e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1px ;
 }

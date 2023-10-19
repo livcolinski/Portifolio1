@@ -3,6 +3,7 @@ import Projeto from "../projeto/Projeto";
 import './Main.css'
 
 
+
 type ProjetoType = {
     id: number,
     titulo:string,
